@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes – persönliche Google-Workspace-Anbindung</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    background: #0f1115; color: #e6e8ee;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 1.5rem; letter-spacing: -0.02em; }
+  h2 { font-size: 1.05rem; margin: 2.5rem 0 0.75rem; letter-spacing: 0.01em; }
+  p { margin: 0 0 1rem; color: #c3c8d4; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; color: #c3c8d4; }
+  li { margin-bottom: 0.4rem; }
+  code {
+    background: #1b1f27; border: 1px solid #272c36; border-radius: 4px;
+    padding: 0.1em 0.4em; font-size: 0.9em; color: #d9dde7;
+  }
+  .badge {
+    display: inline-block; font-size: 0.75rem; letter-spacing: 0.06em;
+    text-transform: uppercase; color: #8b93a5; border: 1px solid #2a2f3a;
+    border-radius: 999px; padding: 0.25rem 0.7rem; margin-bottom: 1.5rem;
+  }
+  a { color: #7fb2ff; text-decoration: none; border-bottom: 1px solid rgba(127,178,255,0.35); }
+  a:hover { border-bottom-color: #7fb2ff; }
+  footer {
+    margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid #22262f;
+    font-size: 0.85rem; color: #79808f;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="badge">Privates Projekt</div>
+  <h1>Hermes – persönliche Google-Workspace-Anbindung</h1>
+
+  <p>
+    Diese Seite dokumentiert einen privat betriebenen OAuth-Client, der einem
+    persönlichen KI-Assistenten (Hermes Agent) den lesenden Zugriff auf den
+    <strong>Google Kalender</strong> und die <strong>Google Kontakte</strong>
+    seines Betreibers ermöglicht.
+  </p>
+
+  <h2>Wozu das dient</h2>
+  <ul>
+    <li>Termine aus dem eigenen Kalender abrufen, um daran zu erinnern und zu planen</li>
+    <li>Geburtstage aus den eigenen Kontakten auslesen und rechtzeitig hinweisen</li>
+  </ul>
+
+  <h2>Was das <em>nicht</em> ist</h2>
+  <ul>
+    <li>Kein öffentlich verfügbarer Dienst, keine Anmeldung für Dritte</li>
+    <li>Keine Datensammlung, keine Auswertung, keine Werbung</li>
+    <li>Keine Weitergabe von Daten an irgendjemanden außer Google selbst</li>
+  </ul>
+
+  <h2>Betrieb</h2>
+  <p>
+    Die Anwendung läuft ausschließlich auf einem vom Betreiber selbst
+    kontrollierten Server. Die Zugangsdaten (OAuth-Token) verbleiben dort in
+    einer lokalen Datei. Details dazu, welche Daten verarbeitet werden und wie
+    sie gelöscht werden können, stehen in der
+    <a href="privacy.html">Datenschutzerklärung</a>.
+  </p>
+
+  <footer>
+    Kontakt: über das öffentliche Repository, das diese Seite hostet (GitHub).<br>
+    Siehe auch: <a href="privacy.html">Datenschutzerklärung / Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
